@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>QAVAH Multimarcas — Motos e carros</title>
+  <meta name="description" content="QAVAH Multimarcas — motos e carros selecionados, revisados e prontos pra rodar. Betim/MG.">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/showcase.css">
+</head>
+<body class="q-body">
+
+  <!-- HEADER -->
+  <header class="q-hd">
+    <a class="q-brand" id="q-brand" href="#"></a>
+    <a class="q-wa-top" id="q-wa-top" href="#" target="_blank"><i class="fab fa-whatsapp"></i><span>Fale conosco</span></a>
+  </header>
+
+  <!-- FILTRO -->
+  <div class="q-chips" id="q-chips">
+    <button class="q-chip on" data-f="">Todos</button>
+    <button class="q-chip" data-f="Moto"><i class="fas fa-motorcycle"></i> Motos</button>
+    <button class="q-chip" data-f="Carro"><i class="fas fa-car"></i> Carros</button>
+  </div>
+
+  <!-- TRILHA -->
+  <div class="q-rail" id="q-rail"></div>
+
+  <!-- FEED -->
+  <main class="q-feed" id="feed"></main>
+
+  <!-- DETALHE -->
+  <div class="q-detail" id="detail">
+    <div class="bd" onclick="QV.closeDetail()"></div>
+    <div class="sheet">
+      <div class="grip"></div>
+      <button class="x" onclick="QV.closeDetail()"><i class="fas fa-xmark"></i></button>
+      <div class="q-gal" id="d-gal">
+        <div class="ph" id="d-ph"></div>
+        <button class="arw l" onclick="QV.galNav(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="arw r" onclick="QV.galNav(1)"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="q-db">
+        <div class="t" id="d-title"></div>
+        <div class="sub" id="d-sub"></div>
+        <div class="q-specs" id="d-specs"></div>
+        <div class="full" id="d-full"></div>
+        <div class="priceBig">
+          <div><small style="color:var(--muted)">Preço</small><div class="v" id="d-price"></div></div>
+          <a class="q-wa" id="d-wa" href="#" target="_blank" style="flex:none;min-width:auto"><i class="fab fa-whatsapp"></i> Tenho interesse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/store.js"></script>
+  <script src="assets/public.js"></script>
+</body>
+</html>
